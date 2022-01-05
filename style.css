@@ -1,0 +1,269 @@
+.container-fluid {
+  padding: 7% 15%;
+}
+
+body {
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 178% */
+  color: #6f6f6f;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #9548d4;
+  font-family: Caladea;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+h2 {
+  font-size: 36px;
+}
+
+.mg-bt {
+  margin-bottom: 30px;
+}
+.mg-bt-lg {
+  margin-bottom: 7%;
+}
+
+.navigation.container-fluid {
+  padding: 2% 15% 7%;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.navbar-brand {
+  font-family: "Gabriela", serif;
+  font-size: 1.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-family: Montserrat;
+  color: white !important;
+  font-size: 1rem;
+  font-weight: regular;
+  transition: text-decoration 1s;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  display: block;
+  background: #c58af4 !important;
+  transition: 250ms;
+  border-radius: 50px;
+  text-align: center;
+}
+.nav-link.active::after {
+  content: "";
+  width: 105%;
+  height: 3px;
+  display: block;
+  background: #c58af4 !important;
+  transition: 250ms;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.nav-link:hover::after {
+  width: 105%;
+}
+#hero {
+  /* background-image:linear-gradient(90deg, rgba(0, 0, 0, 0.42) 50%, rgba(255, 255, 255, 0.04) 96.74%),url('pc-images/hero-image.jpg'); */
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.493) 50%,
+      rgba(0, 0, 0, 0) 96.74%
+    ),
+    url("pc_images/bgmain.jpg");
+  min-height: 584px;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  /* background-position: ; */
+  color: white !important;
+  background-attachment: fixed;
+  text-align: center;
+}
+.hero-content {
+  margin: auto;
+}
+.hero-title {
+  color: white !important;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  margin-top: 8%;
+}
+.hero-subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  /* or 130% */
+  letter-spacing: 0.02em;
+  margin-bottom: 70px;
+}
+.cta-btn {
+  font-size: 18px;
+  border-radius: 0;
+  color: black;
+  background: #c58af4;
+  border: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+}
+.cta-btn:hover {
+  color: black;
+  background: #9548d4;
+}
+#ourstory {
+  text-align: center;
+}
+#category {
+  background: #c58af4;
+}
+
+.boxes > div {
+  padding: 0;
+}
+.boxes img {
+  width: 100%;
+}
+.color-box {
+  color: white !important;
+  padding: 30px !important;
+}
+.color-box h3 {
+  color: white !important;
+}
+/* TESTIMONIALS */
+
+#testimonials {
+  text-align: center;
+  background-image: URL("pc_images/bg2.png");
+  background-repeat: no-repeat;
+  background-position: 18% center;
+}
+
+#testimonials > .container-fluid {
+  padding: 7% 15% !important;
+  padding-bottom: 0 !important;
+}
+#testimonials .container-fluid {
+  padding: 4% 15%;
+  padding-bottom: 7%;
+}
+.testi-name {
+  display: inline-block;
+  font-family: Caladea;
+  font-size: 16px;
+  color: #828282;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-top: 30px;
+}
+.testi-loc {
+  font-family: Caladea;
+  font-size: 16px;
+  color: #828282;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* CONTACT US */
+
+#contactus {
+  background: rgb(240, 240, 240);
+  background: linear-gradient(
+    180deg,
+    rgba(240, 240, 240, 1) 50%,
+    rgba(197, 138, 244, 1) 50%
+  );
+}
+#contactus h2 {
+  text-align: center;
+  margin-bottom: 65px;
+}
+.input-container,
+.details {
+  padding: 30px;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-height: 100%;
+}
+.details {
+  background-color: rgba(149, 72, 212, 0.88);
+  color: rgb(236, 236, 236);
+}
+h5 {
+  color: white;
+}
+.input,
+textarea {
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: Regular;
+  outline: rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.mob-img {
+  display: none;
+}
+@media (max-width: 989px) {
+  .container-fluid {
+    padding: 8% 10%;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  #hero {
+    text-align: center;
+  }
+  .hero-title {
+    color: white !important;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+  }
+  .hero-subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    /* or 130% */
+    letter-spacing: 0.02em;
+    margin-bottom: 70px;
+  }
+
+  #aboutus {
+    text-align: center;
+  }
+  .mob-img {
+    display: block;
+  }
+  .pc-img {
+    display: none;
+  }
+}
